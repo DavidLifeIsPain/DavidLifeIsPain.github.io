@@ -1,0 +1,128 @@
+ /* the self hosted font */
+@font-face {
+    font-family: 'aaarghnormal';
+    src: url('Aaargh-webfont.woff') format('woff');
+
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* creating the container for the navbar */
+.navbar{
+
+  display: flex ;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0D3591;
+  color: white;
+  border-radius: 12px;
+  font-family: 'aaarghnormal';
+}
+/* styling the title elemnt */
+.title{
+  font-size: 1.5rem;
+  margin: 0.5rem;
+}
+/* styling the unordered list element */
+.navbar-links ul{
+  margin: 0 ;
+  padding: 0;
+  display: flex;
+}
+/* styling list item elemnts */
+.navbar-links li{
+  list-style: none
+
+}
+/* styling the anchor tag elements */
+.navbar-links li a{
+  text-decoration: none;
+  color: white ;
+  padding: 1rem;
+  display: block;
+
+
+}
+/* adding hover to the list items */
+.navbar-links li:hover{
+  background-color: #008282;
+  opacity: 1;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24);
+  transform: scale(1.1);
+  overflow: hidden;
+  border-radius: 12px;
+}
+/* adding style on click to the list item elemnts */
+.navbar-links li:active {
+  background-color: blue;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24);
+  transform: translateY(4px);
+}
+/* styling the toggle button */
+.toggle-button{
+  position: absolute;
+  top: .75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+/* adding hover to the toggle button */
+.toggle-button:hover{
+
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24);
+  transform: scale(1.8);
+  overflow: hidden;
+
+}
+/* styling the 3 bars for the toggle button */
+.toggle-button .bar{
+  height: 3px;
+  width: 90%;
+  margin: 2px;
+  justify-content: center;
+  background-color: white;
+  border-radius: 10px;
+}
+/* adding style on click to the toggle button */
+.toggle-button:active {
+
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24);
+  transform: translateY(4px);
+}
+/* using a media query to change the look of the navbar */
+@media (max-width: 768px) {
+  .toggle-button{
+    display: flex;
+  }
+   .navbar-links{
+    display: none;
+    width: 100%;
+    border-radius: 12px;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar-links ul{
+    width: 100%;
+    flex-direction: column;
+
+  }
+  .navbar-links li{
+    text-align:   center;
+    border-radius: 12px;
+  }
+
+
+  .navbar-links li a {
+    padding-left: 0.5rem 1rem;
+
+
+  }
+  .navbar-links.active{
+    display:flex;
+  }
+}

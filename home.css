@@ -1,0 +1,58 @@
+/* adding fonts */
+body {
+  font-family: 'PT Serif', serif;
+}
+/* style for the header */
+.welcome {
+  text-align: center;
+  color: white;
+}
+
+/* style for the container, adding flex to make elemnts responsive */
+.container{
+  display: flex;
+  flex-direction: row;
+  justify-content:  space-between;
+  flex-wrap: wrap;
+
+}
+/*
+style for the containers that hold the headers and pharagraphs */
+.container1 {
+
+  width: 80%;
+  height: auto;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  background-color: #304D77;
+  border-radius: 10px;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24);
+  transition-duration: 0.3s ;
+
+}
+/* adding hover  */
+.container1:hover{
+     transform: scale(1.1);
+
+
+}
+/* setting text color */
+.text{
+color: #95979A;
+}
+
+/* styling header */
+.header{
+  padding: 15px;
+  text-align: center;
+}
+/* adding a media query to disable hover */
+@media screen and (max-width: 768px) {
+
+  .container1:hover{
+    transform: none;
+
+  }
+
+}

@@ -1,0 +1,98 @@
+html {
+
+    box-sizing: border-box;
+  }
+
+  *, *:before, *:after {
+
+    box-sizing: inherit;
+  }
+ /* styles the container that has all the card elemnts */
+  .row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+
+  }
+  /* styles all image elemnts */
+  .images{
+    width: 100%;
+    height: auto;
+    padding: 5px;
+    box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.9);
+}
+/* styles the column elemnts */
+  .column {
+
+    width: 30rem;
+    height: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    transition-duration: 0.3s ;
+
+
+  }
+  /* adds hover effects to columns */
+  .column:hover{
+    transform: scale(1.1);
+    overflow: hidden;
+
+  }
+ /* disables hover on small screen size */
+  @media screen and (max-width: 768px) {
+
+    .column{
+      padding: 3px;
+    }
+    .column:hover{
+      transform: none;
+
+    }
+
+  }
+/* styles the card elemnt */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    background-color: white;
+  }
+/* styles the container elemnt */
+  .container {
+    padding: 0 25px;
+    background-color: white;
+    text-align: center;
+  }
+
+ /* adds style to the button elements */
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    border-radius: 12px;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.5;
+    transition-duration: 0.3s ;
+    margin-bottom: 15px;
+  }
+ /* adds hover effects to the button elements */
+  .button:hover {
+
+    opacity: 1;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24);
+    transform: scale(1.1);
+    overflow: hidden;
+
+  }
+ /* adds on click effects to the button elements */
+  .button:active {
+    background-color: blue;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24);
+    transform: translateY(4px);
+  }

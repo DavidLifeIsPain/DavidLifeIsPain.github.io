@@ -1,0 +1,9 @@
+/* style for the body */
+body{
+  margin: 0;
+  background-image: url(photos/un.png);
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+
+}
